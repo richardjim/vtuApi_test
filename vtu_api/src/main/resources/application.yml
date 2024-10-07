@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: vtu_api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vtu_api
+    username: postgres
+    password: Password@123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+vtu:
+  api:
+    url: https://biller-service-test/api/v1/purchase
+    key: ''
